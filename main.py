@@ -6,7 +6,9 @@ if __name__ == "__main__":
 
     bm = baemin.Crawler()
 
-    bm.update_orders()
+    a = bm.update_orders()
+
+    print(a)
 
     # while True:
     #     bm.update_orders()

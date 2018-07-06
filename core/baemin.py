@@ -68,9 +68,9 @@ class Crawler():
 
         orders_params = {"shopNo" : "all", # We can set shopNo in details, but it would be better to set it "all"
                            "pageNo" : str(pageNo+1) , # Loop until there is no more order.
-                           "from" : self.today_date ,
-                           "to" : self.today_date ,
-                           "ordProgCd" : 1, # 1: In progress, 2: Done
+                           "from" : "2018-06-24",#self.today_date ,
+                           "to" : "2018-06-24",#self.today_date ,
+                           "ordProgCd" : 2, # 1: In progress, 2: Done
                            "purchPstnCd" : "", # "" means all kinds of purchase types.
                            "ts" : str(int(time.time() * 1000))} #timestamp, I don't know why it is needed. I need to check the reason why it is needed.
 
@@ -129,7 +129,8 @@ class Crawler():
 
             if check_boolean:
                 self.df_dict['orders'] = pd.concat([df_all_temp_orders.iloc[:check_idx], self.df_dict['orders']])
-                self.df_dict['orders'].to_csv(self.folder_path + '/orders.csv', encoding='cp949')
+                self.df_dict['orders'] = self.df_dict['orders'].sort_values(by='orderDate')
+                #self.df_dict['orders'].to_csv(self.folder_path + '/orders.csv', encoding='cp949')
                 return self.df_dict['orders'] #break
             else:
                 pageNo = pageNo + 1
