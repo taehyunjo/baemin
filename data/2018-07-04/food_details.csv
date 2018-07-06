@@ -1,0 +1,6 @@
+,foodNm,foodOrdQty,foodPrice,foodPriceGrpNm,foodPriceNm,isDefPrice,ordFoodPrice
+BSGAR00043,진 ONLY불백고기,2,31000,가격,간장불백 600g,True,31000
+BSGAS00217,진 간장불백 세트,2,29800,가격,250g,True,29800
+BSGAS00215,진 고추장불백 세트,1,14900,가격,250g,True,14900
+BSGAS00212,진 고추장불백 세트,1,14900,가격,250g,True,14900
+BSGAS00211,진 고추장불백 세트,1,14900,가격,250g,True,14900

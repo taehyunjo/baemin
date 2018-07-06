@@ -1,0 +1,14 @@
+,foodNm,foodOrdQty,foodPrice,foodPriceGrpNm,foodPriceNm,isDefPrice,ordFoodPrice
+BSGAS00210,콜라,1,2000,가격,1.25L,True,2000
+BSGAS00210,참이슬 후레쉬,2,6000,가격,,True,6000
+BSGAS00210,고기 추가,1,3500,가격,100g,True,3500
+BSGAS00210,진 ONLY불백고기,1,15500,가격,간장불백 600g,True,15500
+BSGAS00209,공기밥 추가,3,3000,가격,,True,3000
+BSGAS00209,진 간장불백 세트,1,25900,가격,750g,True,25900
+BSGAS00205,진 간장불백 세트,1,14900,가격,250g,True,14900
+BSGAS00204,진 ONLY불백고기,1,15500,가격,간장불백 600g,True,15500
+BSGAS00203,공기밥 추가,1,1000,가격,,True,1000
+BSGAS00203,진 ONLY불백고기,1,15500,가격,고추장불백 600g,True,15500
+BSGAS00202,공기밥 추가,1,1000,가격,,True,1000
+BSGAS00202,진 ONLY불백고기,1,16000,가격,핵고추장불백 600g,True,16000
+BSGAS00198,진 간장불백 세트,1,14900,가격,250g,True,14900

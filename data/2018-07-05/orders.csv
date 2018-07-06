@@ -1,0 +1,4 @@
+orderNo,costPrice,orderDate,orderDt,orderId,orderPrice,orderProgressCode,orderTm,purchMethodCodeName,purchType,shopName,shopNo,shopOwnerNo
+BSGAS00221,0,2018-07-05 21:13:36,2018-07-05,SB_257D10358D,14900,1,21:13:36.2430000,바로결제,1,조장희의 마포 진불백 양재점,777418,201806040151
+BSGAS00219,0,2018-07-05 18:49:18,2018-07-05,SB_256C22AD4F,14900,1,18:49:18.8800000,바로결제,1,조장희의 마포 진불백 양재점,777418,201806040151
+BSGAR00046,0,2018-07-05 15:02:05,2018-07-05,gMeV3araKG,14900,1,15:02:05.8930000,바로결제,1,조장희의 마포 진불백 역삼점,777417,201806040151
