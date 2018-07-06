@@ -4,8 +4,7 @@ import datetime
 import time
 import pandas as pd
 import config
-import os
-
+from core import db
 
 class Crawler():
 
@@ -14,7 +13,7 @@ class Crawler():
                  + str('%02d' % datetime_now.month) + "-" \
                  + str('%02d' % datetime_now.day)
 
-    folder_path = config.LOCAL_CONFIG['path'] + today_date
+    # folder_path = config.LOCAL_CONFIG['path'] + today_date
 
     df_dict = {}
 
@@ -23,27 +22,7 @@ class Crawler():
         self.session = self.get_Session() #session
         self.login(config.IDPW['ID'],config.IDPW['PW']) #login
         self.load_data()
-
-        #self.df_orders = pd.DataFrame() #orders를 저장할 dataframe (내부적으로 가지고 있음)
-
-
-    def dfs_maker(self, df_name):
-
-        file_path = self.folder_path + '/' + df_name + '.csv'
-        try:
-            self.df_dict[df_name] = pd.read_csv(file_path,encoding='cp949', index_col = 0)
-        except:
-            self.df_dict[df_name] = pd.DataFrame()
-            if not os.path.exists(self.folder_path):
-                os.makedirs(self.folder_path)
-            self.df_dict[df_name].to_csv(file_path, encoding='cp949')
-
-    def load_data(self):
-
-        df_name_list = ['orders','order_details','purch_details','food_details']
-
-        for name in df_name_list:
-            self.dfs_maker(name)
+        self.db_engine = db.db_machine()
 
     def get_Session(self):
         session = requests.Session()
